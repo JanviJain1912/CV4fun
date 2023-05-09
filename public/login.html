@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+    
+            <meta charset="utf-8">
+            <title>Cartonify</title>
+    
+            <!-- Google Fonts -->
+            <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+    
+            <!-- CSS Stylesheets -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            <link rel="stylesheet" href="css/index.css">
+    
+            <!-- Font Awesome -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    
+    
+            <!-- Bootstrap Scripts -->
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+            
+        
+        </head>
+        <body>
+
+         <div class="banner_main_image1">
+
+            <div class="container">
+                <div>
+                  <section>
+                    <i class="fa fa-arrow-circle-down navbar-arrow" aria-hidden="true" onclick="toggleMenu()"></i>
+                    <ul id="menu">
+                      <li><a href="/"><i class="fa fa-h-square" aria-hidden="true"></i> Home</a></li>
+                    </ul>
+                  </section>
+                  </div>
+                  </div>
+                  </div>
+    
+            <div>
+                <div class="content">
+                   <header>Login Form</header>
+                   <form onsubmit="return false;" id="form">
+                      <div class="field">
+                         <span class="fa fa-user"></span>
+                         <input type="text" required placeholder="Email or Phone"  autocomplete="off" required id="email">
+                      </div>
+                      <div class="field space">
+                         <span class="fa fa-lock"></span>
+                         <input type="password" class="pass-key" required placeholder="Password"  autocomplete="off" required id="password">
+                         <span class="show">SHOW</span>
+                      </div><br/>
+                      <!-- <div class="pass">
+                         <a href="#">Forgot Password?</a>
+                      </div> -->
+                      <div class="alert alert-danger" role="alert" id="error" style="display: none;"></div>
+                      <div class="alert alert-success" role="alert" id="success" style="display: none;"></div>
+                      <br/>
+                      <div class="field">
+                         <input type="submit" value="LOGIN">
+                      </div>
+                   </form>
+                   
+                   <div class="login">
+                      <!-- Or login with -->
+                   </div>
+                   <!-- <div class="links">
+                      <div class="facebook">
+                         <i class="fab fa-facebook-f"><span>Facebook</span></i>
+                      </div>
+                      <div class="instagram">
+                         <i class="fab fa-google"><span>Google</span></i>
+                      </div>
+                   </div> -->
+                   <div class="signup">
+                      Don't have account?
+                      <a href="/signup">Signup Now</a>
+                   </div>
+                </div>
+             </div>
+             
+    
+            <script src="js/login.js" charset="utf-8"></script>
+            
+        </body>
+    </html>
