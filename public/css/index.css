@@ -1,0 +1,361 @@
+.banner_main_image{
+    padding-top: 75px;
+    padding-bottom: 50px;
+    text-align: center;
+    color:white;
+    background: url("bg5.jpg") no-repeat center center;
+    background-size: cover;
+}
+.banner_main_image1{
+  padding-top: 75px;
+  padding-bottom: 50px;
+  text-align: center;
+  color:white;
+  background: url("bg5.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+.banner-content{
+    position: relative;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    margin-left: 20%;
+    margin-top: 12%;
+    margin-bottom: 12%;
+    background-color: rgba(5, 5, 5, 0.4);
+    max-width: 660px;
+ 
+}
+.banner-heading{
+    font-family: "Montserrat-Bold";
+    font-size: 3.5rem;
+    line-height: 1.5;
+    text-align: center;
+}
+.banner-paragraph{
+    font-family: "Montserrat-Bold";
+    font-size: 1.5rem;
+    line-height: 1.5;
+    
+}
+.banner-image{
+    height: 40%;
+    width: 40%;
+    padding-bottom: 30px;
+}
+
+/* navbar */
+
+ul#menu {
+  list-style: none;
+  width: 200px;
+  margin-top: 20px;
+}
+
+ul#menu li {
+  margin: 5px 0;
+  opacity: 0;
+  transition: 0.5s all cubic-bezier(0.31,-0.105,0.43,1.4);
+}
+
+ul#menu li:nth-child(even) {
+  transform: translateX(50px);
+}
+
+ul#menu li:nth-child(odd) {
+  transform: translateX(-50px);
+}
+
+ul#menu li:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+ul#menu li:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+ul#menu li:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+ul#menu li:nth-child(4) {
+  transition-delay: 0.4s;
+}
+
+ul#menu.active li {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+ul#menu li a {
+  background-color: #fff;
+  display: block;
+  padding: 8px 20px;
+  font-weight: 500;
+  color: rgba(5, 5, 5, 0.4);
+  text-decoration: none;
+  border-radius: 3px;
+}
+.navbar-arrow{
+  font-size: 2rem;
+}
+
+
+/* login form */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Poppins:400,500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+/* .bg-img{
+  background: url('bg5.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+} */
+.bg-img:after{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /* background: rgba(0,0,0,0.7); */
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  text-align: center;
+  padding: 60px 32px;
+  width: 370px;
+  transform: translate(-50%,-50%);
+  background-color: rgba(5, 5, 5, 0.4);
+  
+}
+.content header{
+  color: white;
+  font-size: 33px;
+  font-weight: 600;
+  margin: 0 0 35px 0;
+  font-family: 'Montserrat',sans-serif;
+}
+.field{
+  position: relative;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  background: rgba(255,255,255,0.94);
+}
+.field span{
+  color: #222;
+  width: 40px;
+  line-height: 45px;
+}
+.field input{
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #222;
+  font-size: 16px;
+  font-family: 'Poppins',sans-serif;
+}
+.space{
+  margin-top: 16px;
+}
+.show{
+  position: absolute;
+  right: 13px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #222;
+  display: none;
+  cursor: pointer;
+  font-family: 'Montserrat',sans-serif;
+}
+.pass-key:valid ~ .show{
+  display: block;
+}
+.pass{
+  text-align: left;
+  margin: 10px 0;
+}
+.pass a{
+  color: white;
+  text-decoration: none;
+  font-family: 'Poppins',sans-serif;
+}
+.pass:hover a{
+  text-decoration: underline;
+}
+.field input[type="submit"]{
+  background: #3498db;
+  border: 1px solid;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Montserrat',sans-serif;
+}
+.field input[type="submit"]:hover{
+  background: grey;
+}
+.login{
+  color: white;
+  margin: 20px 0;
+  font-family: 'Poppins',sans-serif;
+}
+.links{
+  display: flex;
+  cursor: pointer;
+  color: white;
+  margin: 0 0 20px 0;
+}
+.facebook,.instagram{
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  margin-left: 10px;
+}
+.facebook{
+  margin-left: 0;
+  background: #4267B2;
+  border: 1px solid #3e61a8;
+}
+.instagram{
+  background: #E1306C;
+  border: 1px solid #df2060;
+}
+.facebook:hover{
+  background: #3e61a8;
+}
+.instagram:hover{
+  background: #df2060;
+}
+.links i{
+  font-size: 17px;
+}
+i span{
+  margin-left: 8px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-family: 'Poppins',sans-serif;
+}
+.signup{
+  font-size: 15px;
+  color: white;
+  font-family: 'Poppins',sans-serif;
+}
+.signup a{
+  color: #3498db;
+  text-decoration: none;
+}
+.signup a:hover{
+  text-decoration: underline;
+}
+
+/* feature section */
+
+#features{
+  position: relative;
+  z-index: 1;
+}
+.feature-box{
+  padding: 5%;
+}
+.feature-title{
+  font-size: 1.5rem;
+}
+.icon{
+  color: #beb4b4;
+  font-size: 4rem;
+  padding: 5%;
+}
+.icon:hover{
+  color: #716368;
+}
+
+/* testimonial section */
+
+#testimonials{  
+  /* background-color: #ef8172; */
+  padding: 10%;
+}
+.testimonial-text{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+.testimonial-para{
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+.testimonial-image{
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+
+/* card main page */
+
+/* .card-content{
+  position: relative;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  margin-left: 20%;
+  margin-top: 12%;
+  margin-bottom: 12%;
+  background-color: rgba(5, 5, 5, 0.4);
+  max-width: 400px;
+
+}
+.card-image{
+  height: 50%;
+  width: 100%;
+} */
+
+/* for main page content */
+
+.main_heading{
+  font-family: "Montserrat-Bold";
+    font-size: 2.5rem;
+    line-height: 1.5;
+    text-align: center;
+    padding: 50px;
+}
+
+.button-link {
+  display: inline-block;
+  background-color: #beb4b4;
+  color: #ffffff;
+  padding: 12px 24px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.button-link:hover {
+  background-color: #716368;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+  color: #222;
+}
