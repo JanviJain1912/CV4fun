@@ -16,7 +16,7 @@ from PIL import ImageTk, Image
 top=tk.Tk() 
 top.geometry('400x400')
 top.title('Cartoonify Your Image !')
-top.configure(background='white')
+top.configure(background='black')
 label=Label(top,background='#CDCDCD', font=('calibri',20,'bold'))
 
 def upload():

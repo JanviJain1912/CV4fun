@@ -18,14 +18,6 @@ app.use("/css", express.static(__dirname + "/public/css"));
 app.set("view engine", "ejs");
 app.set("views" , "./views");
 
-// for hbs templates
-// app.set("view engine", "hbs");
-
-// //  for html files
-// const path = require("path");
-// const publicDirectory = path.join(__dirname, './public');
-// app.use(express.static(publicDirectory));
-
 // parse json bodies as sent by api clients
 app.use(express.json());
 
